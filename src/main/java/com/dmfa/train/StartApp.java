@@ -15,6 +15,7 @@ import javax.swing.JButton;
 import javax.swing.JFileChooser;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
@@ -131,6 +132,8 @@ public class StartApp {
 						System.err.println("Error al procesar: " + e2);
 					}
 			        
+				} else {
+					JOptionPane.showMessageDialog(frame, "Ingrese la ubicación del archivo");
 				}
 			}
 		});
